@@ -22,7 +22,21 @@
     - Replaced "Checkout" with a cart icon
     - Added border and shadow around carousel
 
+    --- 11/3/2019 ---
+    - Added color dropdown & quantity field to cards.
+    * Reposition dropdown and quantity field
+    * Fix layout for vote page. (One card, 3 different columns)
 
+    --- 11/9/2019 ---
+    - Changed about us page to a horizontal layout instead of vertical
+    - Centered "Add to cart" on shopping page
+    * Reposition dropdown and quantity field
+
+    --- 11/16/2019 ---
+    - Changed designs on voting page to one card
+    - Added option to change background color to see the design on different colors
+    * Center radio buttons with images
+    **** Changing images from shirt design to just design before put on a shirt ****
 */
 
 html, body {
@@ -119,7 +133,8 @@ a.list-group-item {
 
 .card-footer a {
   color: black;
-  align-content: center;
+  position: relative;
+  left: 25%;
 }
 
 .btn.btn-primary.card-btn:hover {
@@ -210,8 +225,12 @@ a.list-group-item {
 }
 
 /* About Us */
+#aboutus-cardbody {
+  position: relative;
+  top: 10%;
+}
 img#aboutus-img {
-  border-radius: 20px;
+  border-radius: 24px;
   display: block;
   margin: auto;
 }
@@ -230,4 +249,42 @@ p.title {
 
 #aboutus-email {
   text-align: right;
+}
+
+/* Vote */
+.voting-container {
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px grey;
+  background-color: #607d8b;
+}
+
+.voting-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.voting-selection {
+}
+
+.bg-selection {
+  position: relative;
+  left: 45%;
+}
+
+.vote-button {
+  position: relative;
+  color: black;
+  left: 50%;
 }
