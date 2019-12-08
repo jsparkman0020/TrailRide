@@ -40,17 +40,20 @@
 */
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  position: relative;
+  background-image: url("https://i.ytimg.com/vi/AtqimOMiioA/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
 
 
 /* Navbar */
 .navbar {
-  box-shadow: 6px 6px 5px grey;
+  box-shadow: 6px 6px 5px #262524;
+  border-radius: 20px;
 }
 
 .nav-buttons {
@@ -64,7 +67,6 @@ html, body {
   border-width: 2px;
   white-space: nowrap;
 }
-
 
 .nav-buttons:active {
   background-color: black;
@@ -89,15 +91,17 @@ nav a:hover {
   color: black;
 }
 
+
+
+
 /* Cards */
 .card {
   margin: 20px;
   background-color: #607d8b;
-  /*border-radius: 20px;*/
 }
 
 .col-lg-4.col-md-6.mb-4.card.h-100 {
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 6px 6px 5px #262524;
 }
 
 .card-body {
@@ -133,8 +137,6 @@ a.list-group-item {
 
 .card-footer a {
   color: black;
-  position: relative;
-  left: 25%;
 }
 
 .btn.btn-primary.card-btn:hover {
@@ -146,15 +148,35 @@ a.list-group-item {
   width: 40px;
 }
 
+.btn.dropdown-toggle {
+  background-color: #F2962F;
+  color: black;
+}
+
+
+
+
+
 /* Footer */
 #sticky-footer {
+  position: relative;
   background-color: #607d8b;
   width: 100%;
   left: 0;
   bottom: 0;
-  position: relative;
   clear: both;
+  margin-top: 20px;
 }
+
+.footer1 {
+  background-color: #607d8b;
+  height: 72px;
+  padding-top: 20px;
+}
+
+
+
+
 
 /* About us */
 /* Three columns side by side */
@@ -175,7 +197,7 @@ a.list-group-item {
 
 /* Add some shadows to create a card effect */
 .card {
-  box-shadow: 6px 6px 5px grey;
+  box-shadow: 6px 6px 5px #262524;
 }
 
 /* Some left and right padding inside the container */
@@ -211,24 +233,23 @@ a.list-group-item {
 }
 
 .list-group {
-  box-shadow: 6px 6px 5px grey;
+  box-shadow: 6px 6px 5px #262524;
 }
 
 #carouselExampleIndicators {
   border: 5px solid #607d8b;
   border-radius: 10px;
-  box-shadow: 6px 6px 5px grey;
+  box-shadow: 6px 6px 5px #262524;
 }
 
 .d-block.img-fluid {
   border-radius: 4px;
 }
 
+
+
+
 /* About Us */
-#aboutus-cardbody {
-  position: relative;
-  top: 10%;
-}
 img#aboutus-img {
   border-radius: 24px;
   display: block;
@@ -251,40 +272,45 @@ p.title {
   text-align: right;
 }
 
+
+
+
 /* Vote */
 .voting-container {
-  height: 500px;
-  width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 10px;
-  box-shadow: 6px 6px 5px grey;
   background-color: #607d8b;
 }
 
-.voting-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.vote-img:hover {
+  box-shadow: 6px 6px 5px #262524;
 }
 
-.card-img {
-  width: 300px;
-  border-radius: 15px;
+.testClas {
+  background-color: #607d8b;
+  box-shadow: 6px 6px 5px #262524;
+  border-radius: 10px;
 }
 
-.voting-selection {
+.voting-container {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
-.bg-selection {
-  position: relative;
-  left: 45%;
+.vote-background {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vote-selection {
+  color: black;
+  font-size: 20px;
 }
 
 .vote-button {
-  position: relative;
+  padding-bottom: 10px;
   color: black;
-  left: 50%;
 }
